@@ -1,0 +1,33 @@
+.conversation{
+    width: 100%;
+    padding: 3px 0;
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+}
+.conversation:hover{
+    background-color: var(--sec-clr);
+    color: white !important;
+}
+.conversation:hover .conversation_name{
+    color: white;
+}
+.conversation:hover .avatar{
+    background: white !important;
+    color: var(--sec-clr) !important;
+}
+.conversation_wrapper{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+.avatar{
+    width: 30px !important;
+    height: 30px !important;
+    font-size: 15px !important;
+    background: var(--sec-clr) !important;
+}
+.conversation_name{
+    padding-left: 10px;
+    color: white;
+}

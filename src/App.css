@@ -1,0 +1,16 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.App{
+  height: 100vh;
+  overflow: hidden;
+  background: var(--main-bg);
+}
+.App_mess{
+  text-align: center;
+}
+.userName{
+  color: var(--sec-clr);
+}

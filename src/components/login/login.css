@@ -1,0 +1,88 @@
+.login{
+    height: 100vh;
+    background: var(--main-bg);
+    display: grid;
+    place-items: center;
+}
+.app_name{
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+    font-size: 4rem;
+}
+.app_name span{
+    color: var(--sec-clr);
+}
+.login_wrapper{
+    display: grid;
+    place-items: center;
+}
+.button{
+    /* width: 250px; */
+    width: 50px;
+    /* width: 50px; */
+    height: 50px;
+    background: var(--sec-clr);
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    color: white;
+    transition: 0.1s ease-in-out;
+}
+.googleLogo,.googleLogo1{
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+}
+.button:hover{
+    border-radius: 10px !important;
+    width: 250px;
+}
+.button:hover .googleLogo{
+    display: none;
+}
+.button_content{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+.loginText{
+    visibility: hidden !important;
+    opacity: 0;
+    transition: visibility 0.3s, opacity 0.4s;
+    transition-delay: 0.01s;
+    margin-left: 10px;
+}
+.googleLogo1{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s, opacity 0.4s;
+    transition-delay: 0.01s;
+}
+.button:hover .button_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button_content:hover .googleLogo1{
+    visibility: visible !important;
+    opacity: 1;
+}
+.button_content:hover .loginText{
+    visibility: visible !important;
+    opacity: 1;
+}
+.animate{
+    animation: btnAnimate 1s infinite alternate;
+}
+@keyframes btnAnimate {
+    from{
+        background: var(--sec-clr);
+    }
+    to {
+        background: black;
+    }
+}
